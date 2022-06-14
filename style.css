@@ -99,6 +99,8 @@ a:hover {
     background-attachment: fixed
 }
 
+/* **************************MODIFICATION******************************************** */
+
 .title {
     font-size: 20px
 }
@@ -117,7 +119,7 @@ a:hover {
     color: rgb(0, 0, 0) !important;
     font-size: 18px
 }
-
+/* **************************MODIFICATION******************************************** */
 .d-bloc {
     color: rgba(255, 255, 255, .7)
 }
@@ -799,7 +801,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #f1824e
+    background-color: #ff854d
 }
 
 .tc-white {
