@@ -1,25 +1,22 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="description" content="Vous avez un site web
+	qui a besoin d'une nouvelle identité visuelle ou que vous partiez de zéro,
+	laissez l'agence web design la panthère située à Lyon vous réaliser un design
+	 dont vous serez fier et qui représentera votre entreprise">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-	<title>page2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<title>La Panthère, Contact</title>
 
 
 	<!-- Analytics -->
@@ -41,6 +38,8 @@
 								alt="atlanta web design logo" height="40" /></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
 							data-toggle="collapse" data-target=".navbar-1">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+								class="icon-bar"></span><span class="icon-bar"></span>
 						</button>
 					</div>
 					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -48,12 +47,6 @@
 							<li>
 								<a href="index.html">Accueil</a>
 							</li>
-							<li>
-							</li>
-							<li>
-								<a href="page2.html">page2 &gt;</a>
-							</li>
-						</ul>
 					</div>
 				</nav>
 			</div>
@@ -86,25 +79,25 @@
 						<form id="form_1" novalidate success-msg="Your message has been sent."
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
-								<label>
-									Nom
+								<label for="name">
+									Nom Prenom
 								</label>
-								<input id="name" class="form-control" required />
+								<input type="text" id="name" class="form-control" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
 								</label>
 								<input id="email" class="form-control" type="email" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="connu">
 									Comment nous avez-vous connu ?
-								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								</label for="connu">
+								<input class="form-control" type="text" required id="connu" />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 								</label><textarea id="message" class="form-control" rows="4" cols="50"
 									required></textarea>
@@ -137,28 +130,31 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
+						<p class="text-center white" id="footer-p">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
-						<div class="row row-no-gutters social">
+						<div class="social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a aria-label="Twitter" class="social" href="index.html"><span
+											class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a aria-label="Facebook" class="social" href="index.html"><span
+											class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a aria-label="Dribbble" class="social" href="index.html"><span
+											class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span
+									<a aria-label="Instagram" class="social" href="index.html"><span
 											class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
@@ -172,7 +168,14 @@
 	</div>
 	<!-- Principal conteneur END -->
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"
+		defer></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/formHandler.js"></script>
 </body>
 
 </html>
